@@ -1,0 +1,8 @@
+{
+	"id": 3,
+	"name": "James",
+	"gender": "Male",
+	"birth_year": 1967,
+	"condition": "Hypertension",
+	"adherence": 15
+}

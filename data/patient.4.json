@@ -1,0 +1,8 @@
+{
+	"id": 4,
+	"name": "Arnold",
+	"gender": "Female",
+	"birth_year": 1897,
+	"condition": "Diabetes",
+	"adherence": 5
+}

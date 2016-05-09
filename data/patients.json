@@ -1,0 +1,48 @@
+[{
+	"id": 1,
+	"name": "Jex",
+	"gender": "Male",
+	"birth_year": 1988,
+	"condition": "Hypertension",
+	"adherence": 2
+},
+{
+	"id": 2,
+	"name": "Jacob",
+	"gender": "Female",
+	"birth_year": 1989,
+	"condition": "Tubercolosis",
+	"adherence": 5
+},
+{
+	"id": 3,
+	"name": "James",
+	"gender": "Male",
+	"birth_year": 1967,
+	"condition": "Hypertension",
+	"adherence": 15
+},
+{
+	"id": 4,
+	"name": "Arnold",
+	"gender": "Female",
+	"birth_year": 1897,
+	"condition": "Diabetes",
+	"adherence": 5
+},
+{
+	"id": 5,
+	"name": "Peter",
+	"gender": "Female",
+	"birth_year": 1993,
+	"condition": "Asthma",
+	"adherence": 6
+},
+{
+	"id": 6,
+	"name": "John",
+	"gender": "Male",
+	"birth_year": 1994,
+	"condition": "Diabetes",
+	"adherence": 8
+}]

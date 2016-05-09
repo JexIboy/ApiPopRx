@@ -1,0 +1,8 @@
+{
+	"id": 5,
+	"name": "Peter",
+	"gender": "Female",
+	"birth_year": 1993,
+	"condition": "Asthma",
+	"adherence": 6
+}

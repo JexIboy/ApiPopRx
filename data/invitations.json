@@ -1,0 +1,48 @@
+[{
+	"id": 1,
+	"name": "Dan",
+	"gender": "Male",
+	"birth_year": 1923,
+	"condition": "Hypertension",
+	"adherence": 2
+},
+{
+	"id": 2,
+	"name": "Jill",
+	"gender": "Male",
+	"birth_year": 1975,
+	"condition": "Tubercolosis",
+	"adherence": 5
+},
+{
+	"id": 3,
+	"name": "Nayomi",
+	"gender": "Female",
+	"birth_year": 1977,
+	"condition": "Hypertension",
+	"adherence": 15
+},
+{
+	"id": 4,
+	"name": "Chloe",
+	"gender": "Female",
+	"birth_year": 1877,
+	"condition": "Diabetes",
+	"adherence": 5
+},
+{
+	"id": 5,
+	"name": "Dwayne",
+	"gender": "Male",
+	"birth_year": 1989,
+	"condition": "Cramps",
+	"adherence": 6
+},
+{
+	"id": 6,
+	"name": "Johnson",
+	"gender": "Male",
+	"birth_year": 1988,
+	"condition": "Muscle Pain",
+	"adherence": 8
+}]
