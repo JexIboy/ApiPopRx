@@ -9,7 +9,7 @@ class InvitePatientForm extends Form
 	public function __construct($name = null)
 	{
 		// we want to ignore the name passed
-		parent::__construct('email');
+		parent::__construct('id');
 		
 		$this->add(array(
 			'name' => 'email',
