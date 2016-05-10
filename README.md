@@ -1,6 +1,7 @@
-Import database from /api.poprx/data folder and name it to "poprx"
+#### Import database from /api.poprx/data folder and name it to "poprx"
 
-vhost file
+#### vhost file
+```
 <VirtualHost *:80>
 	ServerName api.poprx.com
 	DocumentRoot C:/xampp/htdocs/api.poprx/public
@@ -14,7 +15,8 @@ vhost file
 		</IfModule>
 	</Directory>
 </VirtualHost>
-
+```
+```
 <VirtualHost *:80>
 	ServerName app.poprx.com
 	DocumentRoot C:/xampp/htdocs/app.poprx
@@ -28,6 +30,6 @@ vhost file
 		</IfModule>
 	</Directory>
 </VirtualHost>
-
-Please use "app.poprx.dev" for you domain name to enable the facebook login feature
-If you were going to test the sending of email please enable the less security feature in your google account
+```
+#### Please use "app.poprx.dev" for you domain name to enable the facebook login feature
+#### If you were going to test the sending of email please enable the less security feature in your google account
