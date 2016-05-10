@@ -12,7 +12,7 @@ class InvitePatientForm extends Form
 		parent::__construct('id');
 		
 		$this->add(array(
-			'name' => 'email',
+			'name' => 'recipient',
 			'type' => 'Email',
 		));
 	}

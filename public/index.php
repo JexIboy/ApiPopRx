@@ -6,7 +6,7 @@
 chdir(dirname(__DIR__));
 
 header("Access-Control-Allow-Origin: http://app.poprx.com");
-header('Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept');
+header('Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization');
 error_reporting(E_ERROR | E_PARSE);
 
 // Decline static file requests back to the PHP built-in webserver

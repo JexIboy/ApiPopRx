@@ -1,12 +1,27 @@
 <?php
-
 return array(
 	'db' => array(
 		'username' => '',
 		'password' => '',
 	),
+	'user_account' => array(
+		'fb_id' => "",
+	),
 	'email_account' => array(
-		'email' => ''
-		'password' => ''
-	)
+		'email' => '<gmail email>',
+		'password' => '<gmail password>', /*if you were going to test the sending of email please enable the less security feature in your google account */
+	),
+	'session' => array(
+        'config' => array(
+            'class' => 'Zend\Session\Config\SessionConfig',
+            'options' => array(
+                'name' => 'app.poprx.dev', /*please use "app.poprx.dev" for you domain name to enable the facebook login feature */
+            ),
+        ),
+        'storage' => 'Zend\Session\Storage\SessionArrayStorage',
+        'validators' => array(
+            'Zend\Session\Validator\RemoteAddr',
+            'Zend\Session\Validator\HttpUserAgent',
+        ),
+    ),
 );

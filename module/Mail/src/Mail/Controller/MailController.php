@@ -28,28 +28,30 @@ class MailController extends AbstractActionController {
 			$form->setInputFilter($patient->getInputFilter());
 			
 			if ($form->isValid()) {
-				$mail = new Mail\Message();
-				$mail->setBody('This is the text of the email.');
-				$mail->setFrom($data['email'], 'Sender\'s name');
-				$mail->addTo('jex310@gmail.com', 'Name of recipient');
-				$mail->setSubject('TestSubject');
-
-				$transport = new SmtpTransport();
-				$options   = new SmtpOptions(array(
-					'name' => 'app.poprx.com',
-				    'host' => 'smtp.gmail.com',
-				    'port' => 465,
-				    'connection_class' => 'login',
-				    'connection_config' => array(
-				        'username' => 'jex310@gmail.com',
-				        'password' => 'motivation101',
-				        'ssl'=> 'ssl'
-				    ),
-				));
-
-				$transport->setOptions($options);
 
 				try {
+					$mail = new Mail\Message();
+					$mail->setBody('Please come to my clinic in your convenient time.');
+					$mail->setFrom($config['email_account']['email'], $data['sender_name']);
+					$mail->addTo($data['recipient']);
+					$mail->setSubject('Doctor Invitation');
+
+					$transport = new SmtpTransport();
+					$options   = new SmtpOptions(array(
+						'name' => 'app.poprx.com',
+					    'host' => 'smtp.gmail.com',
+					    'port' => 465,
+					    'connection_class' => 'login',
+					    'connection_config' => array(
+					        'username' => $config['email_account']['email'],
+					        'password' => $config['email_account']['password'],
+					        'ssl'=> 'ssl'
+					    ),
+					));
+
+					$transport->setOptions($options);
+
+				
 					$transport->send($mail);
 
 					return new JsonModel(array(
@@ -58,7 +60,7 @@ class MailController extends AbstractActionController {
 				} catch (Zend_Exception $e) {
 					return new JsonModel(array(
 						'status' => 'error',
-						'error' => 'Unable to send email.'
+						'error' => 'Unable to send email. Please try again.'
 					));
 				}
 
@@ -66,16 +68,17 @@ class MailController extends AbstractActionController {
 					'status' => 'success'
 				));
 			} else {
+				var_dump($form->getMessages());
 				return new JsonModel(array(
 					'status' => 'error',
 					'error' => 'Invalid form fields'
 				));
 			}
-		} else {
-			return new JsonModel(array(
-				'status' => 'error',
-				'error' => 'There is something wrong in your request'
-			));
 		}
+
+		return new JsonModel(array(
+			'status' => 'error',
+			'error' => 'There is something wrong in your request'
+		));
 	}
 }

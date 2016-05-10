@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e47559ad31184bd19884439f2542959f",
+    "hash": "bf7befc991ac2a4a7092108def9892b0",
     "content-hash": "cdb736649070b6cf07fa70ff78eddf70",
     "packages": [
         {
@@ -1206,7 +1206,7 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.0.5",
+            "version": "v3.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
@@ -2732,16 +2732,16 @@
         },
         {
             "name": "zendframework/zend-mail",
-            "version": "2.7.0",
+            "version": "2.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-mail.git",
-                "reference": "fcec5a6f32a5646ce81783f319836996bdd03110"
+                "reference": "2e817b58ebaa2b422a25d854106a91f74b6a7976"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-mail/zipball/fcec5a6f32a5646ce81783f319836996bdd03110",
-                "reference": "fcec5a6f32a5646ce81783f319836996bdd03110",
+                "url": "https://api.github.com/repos/zendframework/zend-mail/zipball/2e817b58ebaa2b422a25d854106a91f74b6a7976",
+                "reference": "2e817b58ebaa2b422a25d854106a91f74b6a7976",
                 "shasum": ""
             },
             "require": {
@@ -2752,8 +2752,8 @@
                 "zendframework/zend-validator": "^2.6"
             },
             "require-dev": {
-                "fabpot/php-cs-fixer": "1.7.*",
-                "phpunit/phpunit": "~4.0",
+                "phpunit/phpunit": "^4.8",
+                "squizlabs/php_codesniffer": "^2.3.1",
                 "zendframework/zend-config": "^2.6",
                 "zendframework/zend-crypt": "^2.6",
                 "zendframework/zend-servicemanager": "^2.7.5 || ^3.0.3"
@@ -2788,7 +2788,7 @@
                 "mail",
                 "zf2"
             ],
-            "time": "2016-04-11 20:32:54"
+            "time": "2016-05-09 21:52:30"
         },
         {
             "name": "zendframework/zend-math",

@@ -18,7 +18,7 @@ class InvitePatient implements InputFilterAwareInterface {
 			$inputFilter = new InputFilter();
 
 			$inputFilter->add(array(
-				'name'     => 'email',
+				'name'     => 'recipient',
 				'required' => true,
 				'filters'  => array(
 					array('name' => 'StripTags'),

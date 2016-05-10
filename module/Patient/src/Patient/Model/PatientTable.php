@@ -22,6 +22,17 @@ class PatientTable {
 		);
 	}
 
+	public function getInvitedPatients() {
+		$resultSet = $this->tableGateway->select(array('is_invited' => 1));
+
+		$result = $this->toArray($resultSet);
+
+		return array(
+			'status' => 'success',
+			'data' => $result
+		);
+	}
+
 	public function getPatient($id) {
 		$id  	= (int) $id;
 		$rowset = $this->tableGateway->select(array('id' => $id));
